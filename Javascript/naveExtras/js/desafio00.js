@@ -33,45 +33,45 @@ if(tempo <= 3){
     if(salario < 1999){
         salario*= 1.03
         alert(`Seu salario será de: `+ salario.toFixed(2))
-    }else if(salario < 2000 && salario < 5000){
+    }else if(salario < 5000){
         salario*= 1.05
         alert(`Seu salario sera de: `+ salario.toFixed(2))
-    }else if(salario < 5000 && salario < 7000){
+    }else if(salario < 7000){
         salrio*=1.07
         alert(`Seu salario sera de:` + salario.toFixed(2))
-    }else if(salario > 7000){
+    }else{
         salario*=1.10
         alert(`Seu salario sera de:` + salario.toFixed(2))
     }
 
-}else if(tempo <= 6){
-    if(salario < 1999){
-        salario*= 1.03
-        alert(`Seu salario será de: `+ salario.toFixed(2))
-    }else if(salario < 2000 && salario < 5000){
-        salario*= 1.05
-        alert(`Seu salario sera de: `+ salario.toFixed(2))
-    }else if(salario < 5000 && salario < 7000){
-        salrio*=1.07
-        alert(`Seu salario sera de:` + salario.toFixed(2))
-    }else if(salario > 7000){
-        salario*=1.10
-        alert(`Seu salario sera de:` + salario.toFixed(2))
+    }else if(tempo <= 6){
+        if(salario < 1999){
+            salario*= 1.03
+            alert(`Seu salario será de: `+ salario.toFixed(2))
+        }else if(salario < 2000 && salario < 5000){
+            salario*= 1.05
+            alert(`Seu salario sera de: `+ salario.toFixed(2))
+        }else if(salario < 5000 && salario < 7000){
+            salrio*=1.07
+            alert(`Seu salario sera de:` + salario.toFixed(2))
+        }else if(salario > 7000){
+            salario*=1.10
+            alert(`Seu salario sera de:` + salario.toFixed(2))
+        }
+    }else if(tempo <= 10){
+        if(salario < 1999){
+            salario*= 1.05
+            alert(`Seu salario será de: `+ salario.toFixed(2))
+        }else if(salario < 2000 && salario < 5000){
+            salario*= 1.07
+            alert(`Seu salario sera de: `+ salario.toFixed(2))
+        }else if(salario < 5000 && salario < 7000){
+            salrio*=1.09
+            alert(`Seu salario sera de:` + salario.toFixed(2))
+        }else if(salario > 7000){
+            salario*=1.12
+            alert(`Seu salario sera de:` + salario.toFixed(2))
+        }
     }
-}else if(tempo <= 10){
-    if(salario < 1999){
-        salario*= 1.05
-        alert(`Seu salario será de: `+ salario.toFixed(2))
-    }else if(salario < 2000 && salario < 5000){
-        salario*= 1.07
-        alert(`Seu salario sera de: `+ salario.toFixed(2))
-    }else if(salario < 5000 && salario < 7000){
-        salrio*=1.09
-        alert(`Seu salario sera de:` + salario.toFixed(2))
-    }else if(salario > 7000){
-        salario*=1.12
-        alert(`Seu salario sera de:` + salario.toFixed(2))
-    }
-}
 
 alert(`O nome do usuário eh: ${nome} seu salario eh: ${salario.toFixed(2)} seu cargo eh:  ${cargo} seu tempo de atuação eh: ${tempo}`)
